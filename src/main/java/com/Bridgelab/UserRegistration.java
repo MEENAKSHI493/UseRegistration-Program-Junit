@@ -17,6 +17,7 @@ public class UserRegistration {
              *  userRegistration.validateEmail();
              *  userRegistration.contactNumber();
              *  userRegistration.validatePasswordRule1();
+             *  userRegistration.validatePasswordRule2();
              **/
             userRegistration.validatePasswordRule2();
         }
@@ -113,7 +114,7 @@ public class UserRegistration {
             sc = new Scanner(System.in);
             String password = sc.nextLine();
             //Pattern should have at least 1 Uppercase letter and 8 minimum character(ex:Abec*xyz)
-            boolean result=Pattern.matches(("^[a-zA-Z0-9*._@!&~/.,';$!`~`#]{8,}$"),password);
+            boolean result=Pattern.matches(("^(?=.*[A-Z])[a-zA-Z0-9*._@!&~/.,';$!`~`#].{8,}$"),password);
             if (result) {
                 System.out.println("Valid password");
                 return true;
@@ -123,6 +124,22 @@ public class UserRegistration {
                 return false;
             }
     }
+        //To Validate password Rule3
+        public boolean validatePasswordRule3(){
+            System.out.println("Please Enter the  password:");
+            sc = new Scanner(System.in);
+            String password = sc.nextLine();
+            //Pattern should have at least 1 Numeric Number and 8 minimum character(ex:)
+            boolean result=Pattern.matches("^(?=.*[0-9])[a-zA-Z0-9*._@!&~/.,';$!`~`#].{8,}$",password);
+            if (result) {
+                System.out.println("Valid password");
+                return true;
+            }
+            else {
+                System.out.println("InValid password");
+                return false;
+            }
+        }
 }
 
 
