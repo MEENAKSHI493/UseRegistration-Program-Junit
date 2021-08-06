@@ -1,2 +1,4 @@
 com/Bridgelab/UserRegistration.java
  com.Bridgelab.UserRegistration
+com/Bridgelab/EmailSample.java
+ com.Bridgelab.EmailSample
