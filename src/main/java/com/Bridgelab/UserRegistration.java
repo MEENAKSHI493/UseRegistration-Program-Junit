@@ -12,9 +12,10 @@ public class UserRegistration {
             //Create object
             UserRegistration userRegistration = new UserRegistration();
             /**
-             *userRegistration.validateFirstName();
+             *  userRegistration.validateFirstName();
+             *  userRegistration.validateLastName();
              **/
-            userRegistration.validateLastName();
+            userRegistration.validateEmail();
         }
         //To Validate the user FirstName
         public boolean validateFirstName()
@@ -54,6 +55,22 @@ public class UserRegistration {
                 return false;
             }
     }
+        //To Validate Email
+        public boolean validateEmail(){
+            System.out.println("Please Enter the Email:");
+            sc = new Scanner(System.in);
+            String email = sc.next();
+            //Pattern to to check email Ex:abc.xyz@bl.co.in,Invalid:abc.xyz@bl.co%^.in
+            boolean result = Pattern.matches("^[a-zA-Z0-9+_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$",email);
+            if(result) {
+                System.out.println("Valid mailId");
+                return true;
+            }
+            else {
+                System.out.println("Invalid mailId");
+                return false;
+            }
+        }
 }
 
 
