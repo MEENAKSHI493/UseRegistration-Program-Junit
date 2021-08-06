@@ -15,8 +15,9 @@ public class UserRegistration {
              *  userRegistration.validateFirstName();
              *  userRegistration.validateLastName();
              *  userRegistration.validateEmail();
+             *  userRegistration.contactNumber();
              **/
-            userRegistration.contactNumber();
+            userRegistration.validatePasswordRule1();
         }
         //To Validate the user FirstName
         public boolean validateFirstName()
@@ -87,6 +88,22 @@ public class UserRegistration {
             else {
                 System.out.println("InValid contactNumber");
                 return result;
+            }
+        }
+        //To Validate password Rule1
+        public boolean validatePasswordRule1(){
+            System.out.println("Please Enter the  password:");
+            sc = new Scanner(System.in);
+            String password = sc.nextLine();
+            //Pattern to check minimum of 8 characters (ex:abcd*.ef)should fallow password Rules
+            boolean result=Pattern.matches(("^[a-zA-Z0-9*._@!&~/.,';$!`~`#]{8,}$"),password);
+            if (result) {
+                System.out.println("Valid password");
+                return true;
+            }
+            else {
+                System.out.println("InValid password");
+                return false;
             }
         }
 }
