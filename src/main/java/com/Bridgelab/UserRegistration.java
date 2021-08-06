@@ -11,7 +11,10 @@ public class UserRegistration {
             System.out.println("Welcome to UserRegistration");
             //Create object
             UserRegistration userRegistration = new UserRegistration();
-            userRegistration.validateFirstName();
+            /**
+             *userRegistration.validateFirstName();
+             **/
+            userRegistration.validateLastName();
         }
         //To Validate the user FirstName
         public boolean validateFirstName()
@@ -32,7 +35,26 @@ public class UserRegistration {
                 return false;
             }
         }
+        //To Validate  user LastName
+        public boolean validateLastName() {
+            //Pattern to check LastName starts with Caps and has minimum of 3 character (Ex:Budarkar)
+            String regex =  "(^[A-Z]+[A-Za-z]{2,})$";
+            System.out.println("Please Enter the LastName:");
+            sc = new Scanner(System.in);
+            String lastName = sc.nextLine();
+            Pattern pattern = Pattern.compile(regex);
+            Matcher matcher = pattern.matcher(lastName);
+            boolean result = matcher.matches();
+            if (result) {
+                System.out.println("Valid Lastname:");
+                return true;
+            }
+            else {
+                System.out.println("Invalid LastName:");
+                return false;
+            }
     }
+}
 
 
 
