@@ -14,8 +14,9 @@ public class UserRegistration {
             /**
              *  userRegistration.validateFirstName();
              *  userRegistration.validateLastName();
+             *  userRegistration.validateEmail();
              **/
-            userRegistration.validateEmail();
+            userRegistration.contactNumber();
         }
         //To Validate the user FirstName
         public boolean validateFirstName()
@@ -69,6 +70,23 @@ public class UserRegistration {
             else {
                 System.out.println("Invalid mailId");
                 return false;
+            }
+        }
+
+        //To Validate contact number
+        public boolean contactNumber(){
+            System.out.println("Please Enter the contactNumber:");
+            sc = new Scanner(System.in);
+            String contactNumber = sc.nextLine();
+            //Pattern to check country code followed by space and 10 digit number Ex:91 7406998045
+            boolean result=Pattern.matches("^[0-9]{2}\\s[0-9]{10}$",contactNumber);
+            if (result){
+                System.out.println("Valid contactNumber");
+                return true;
+            }
+            else {
+                System.out.println("InValid contactNumber");
+                return result;
             }
         }
 }
