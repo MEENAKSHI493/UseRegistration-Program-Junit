@@ -1,4 +1,6 @@
-com/Bridgelab/UserRegistration.java
- com.Bridgelab.UserRegistration
 com/Bridgelab/EmailSample.java
  com.Bridgelab.EmailSample
+com/Bridgelab/UserRegistrationRegex.java
+ com.Bridgelab.UserRegistrationRegex
+com/Bridgelab/UserRegistration.java
+ com.Bridgelab.UserRegistration
