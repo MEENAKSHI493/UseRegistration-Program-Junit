@@ -29,8 +29,6 @@ public class UserRegistrationTest {
         boolean result = regexvalidator.validateLastName("Budarkar");
         Assert.assertTrue(result);
     }
-
-    //Test case to validate  lastName length
     @Test // @ Annotation
     // Method  return false when not have special char
     public void givenFirstName_whenHavingSpecialChar_Shouldretrunfalse() {           // calling Method

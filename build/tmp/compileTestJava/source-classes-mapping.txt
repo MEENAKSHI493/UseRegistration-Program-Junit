@@ -1,2 +1,4 @@
 com/Bridgelab/UserRegistrationTest.java
  com.Bridgelab.UserRegistrationTest
+com/BridgeLabException/UserRegistrationTestExecption.java
+ com.BridgeLabException.UserRegistrationTestExecption

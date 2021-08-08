@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.BridgeLabException.UserRegistrationTestExecption" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-08T14:18:35" hostname="DESKTOP-I2EONEO" time="0.037">
+  <properties/>
+  <testcase name="givenFirstName_whenlengthlessthan3char_Shouldretrunfalse()" classname="com.BridgeLabException.UserRegistrationTestExecption" time="0.037"/>
+  <system-out><![CDATA[please enter valid first Name
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
