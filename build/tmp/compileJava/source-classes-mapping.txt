@@ -2,9 +2,12 @@ com/Bridgelab/UserRegistrationRegex.java
  com.Bridgelab.UserRegistrationRegex
 com/Bridgelab/UserRegistration.java
  com.Bridgelab.UserRegistration
-com/Bridgelab/EmailSample.java
- com.Bridgelab.EmailSample
 com/BridgeLabException/InvalidUserRegistrationException.java
  com.BridgeLabException.InvalidUserRegistrationException
 com/BridgeLabException/UserRegistrationException.java
  com.BridgeLabException.UserRegistrationException
+com/Bridgelab/EmailSample.java
+ com.Bridgelab.EmailSample
+com/Bridgelab/UserRegistrationLamdaExpression.java
+ com.Bridgelab.UserRegistrationLamdaExpression
+ com.Bridgelab.Validator
